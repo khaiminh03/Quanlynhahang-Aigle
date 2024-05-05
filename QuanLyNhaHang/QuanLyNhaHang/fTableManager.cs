@@ -10,19 +10,27 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Globalization;
+using QuanLyNhaHang.DTO;
 
 
 namespace QuanLyNhaHang
 {
     public partial class fTableManager : Form
     {
-        
+        private Account loginAccount;
 
-        
-
-        public fTableManager()
+        public Account LoginAccount
         {
-            
+            get { return loginAccount; }
+            set { loginAccount = value; ChangeAccount(loginAccount.Type); }
+        }
+
+
+        public fTableManager(Account acc)
+        {
+            InitializeComponent();
+            this.LoginAccount = acc;
+
         }
         void load()
         {
