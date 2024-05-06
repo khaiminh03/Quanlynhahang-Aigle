@@ -10,25 +10,34 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Globalization;
+using QuanLyNhaHang.DTO;
 
 
 namespace QuanLyNhaHang
 {
     public partial class fTableManager : Form
     {
-        
+        private Account loginAccount;
 
-        
-
-        public fTableManager()
+        public Account LoginAccount
         {
-            
+            get { return loginAccount; }
+            set { loginAccount = value; ChangeAccount(loginAccount.Type); }
+        }
+
+
+        public fTableManager(Account acc)
+        {
+            InitializeComponent();
+            this.LoginAccount = acc;
+            LoadTable();
         }
         void load()
         {
            
         }
         #region Method
+
         void ChangeAccount(int type)
         {
            
@@ -43,7 +52,27 @@ namespace QuanLyNhaHang
         }
         void LoadTable()
         {
-           
+            flowLayoutPanel1.Controls.Clear();
+            List<Table> tableList = TableDAO.Instance.LoadTableList();
+
+            foreach (Table item in tableList)
+            {
+                Button btn = new Button() { Width = TableDAO.TableWidth, Height = TableDAO.TableHeight };
+                btn.Text = item.Name + Environment.NewLine + item.Status;
+                btn.Click += btn_Click;
+                btn.Tag = item;
+                switch (item.Status)
+                {
+                    default:
+                        btn.BackColor = Color.Red;
+                        break;
+                    case "Trống":
+                        btn.BackColor = Color.GreenYellow;
+                        break;
+
+                }
+                flowLayoutPanel1.Controls.Add(btn);
+            }
         }
         void ShowBill(int id)
         {

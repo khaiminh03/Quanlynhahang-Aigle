@@ -21,10 +21,10 @@ namespace QuanLyNhaHang.DAO
 
         private DataProvider() { }
 
-        private string chuoiketnoi = "Data Source = YOUNGTEE; Initial Catalog = QuanLyNhaHang; Integrated Security = True";
-       
+        private string chuoiketnoi = "Data Source = VINHLAPTOP; Initial Catalog = QuanLyNhaHang; Integrated Security = True";
+
         // data source đỏi lại cho đúng tùy máy"
-        // vinh: LAPTOP-HRCJET3B
+        // vinh: VINHLAPTOP
         // minh: YOUNGTEE
         // ninh: LAPTOP-MHOHQ41L\\SQLEXPRESS
         public DataTable ExecuteSQL(string sql, object[] parameter = null) // có thể bằng null

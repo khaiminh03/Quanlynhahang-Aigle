@@ -1,10 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\LENOVO\\Desktop\\QuanLyNhaHang - Copy\\QuanLyNhaHang5\\",
+  "WorkspaceRootPath": "C:\\Users\\LENOVO\\Desktop\\QuanLyNhaHang7\\QuanLyNhaHang7\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ED5FB770-0D4D-48E5-8972-D8FE71F9CF0C}|QuanLyNhaHang\\QuanLyNhaHang.csproj|c:\\users\\lenovo\\desktop\\quanlynhahang - copy\\quanlynhahang5\\quanlynhahang\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{ED5FB770-0D4D-48E5-8972-D8FE71F9CF0C}|QuanLyNhaHang\\QuanLyNhaHang.csproj|solutionrelative:quanlynhahang\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{ED5FB770-0D4D-48E5-8972-D8FE71F9CF0C}|QuanLyNhaHang\\QuanLyNhaHang.csproj|c:\\users\\lenovo\\desktop\\quanlynhahang7\\quanlynhahang7\\quanlynhahang\\ftablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED5FB770-0D4D-48E5-8972-D8FE71F9CF0C}|QuanLyNhaHang\\QuanLyNhaHang.csproj|solutionrelative:quanlynhahang\\ftablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED5FB770-0D4D-48E5-8972-D8FE71F9CF0C}|QuanLyNhaHang\\QuanLyNhaHang.csproj|C:\\Users\\LENOVO\\Desktop\\QuanLyNhaHang7\\QuanLyNhaHang7\\quanlynhahang\\dao\\tabledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED5FB770-0D4D-48E5-8972-D8FE71F9CF0C}|QuanLyNhaHang\\QuanLyNhaHang.csproj|solutionrelative:quanlynhahang\\dao\\tabledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED5FB770-0D4D-48E5-8972-D8FE71F9CF0C}|QuanLyNhaHang\\QuanLyNhaHang.csproj|C:\\Users\\LENOVO\\Desktop\\QuanLyNhaHang7\\QuanLyNhaHang7\\quanlynhahang\\dto\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED5FB770-0D4D-48E5-8972-D8FE71F9CF0C}|QuanLyNhaHang\\QuanLyNhaHang.csproj|solutionrelative:quanlynhahang\\dto\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED5FB770-0D4D-48E5-8972-D8FE71F9CF0C}|QuanLyNhaHang\\QuanLyNhaHang.csproj|C:\\Users\\LENOVO\\Desktop\\QuanLyNhaHang7\\QuanLyNhaHang7\\quanlynhahang\\ftablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ED5FB770-0D4D-48E5-8972-D8FE71F9CF0C}|QuanLyNhaHang\\QuanLyNhaHang.csproj|solutionrelative:quanlynhahang\\ftablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +26,54 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\QuanLyNhaHang - Copy\\QuanLyNhaHang5\\QuanLyNhaHang\\Login.cs",
-              "RelativeDocumentMoniker": "QuanLyNhaHang\\Login.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\QuanLyNhaHang - Copy\\QuanLyNhaHang5\\QuanLyNhaHang\\Login.cs [Design]",
-              "RelativeToolTip": "QuanLyNhaHang\\Login.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "Table.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\QuanLyNhaHang7\\QuanLyNhaHang7\\QuanLyNhaHang\\DTO\\Table.cs",
+              "RelativeDocumentMoniker": "QuanLyNhaHang\\DTO\\Table.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\QuanLyNhaHang7\\QuanLyNhaHang7\\QuanLyNhaHang\\DTO\\Table.cs",
+              "RelativeToolTip": "QuanLyNhaHang\\DTO\\Table.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T06:52:16.979Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-02T07:46:07.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TableDAO.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\QuanLyNhaHang7\\QuanLyNhaHang7\\QuanLyNhaHang\\DAO\\TableDAO.cs",
+              "RelativeDocumentMoniker": "QuanLyNhaHang\\DAO\\TableDAO.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\QuanLyNhaHang7\\QuanLyNhaHang7\\QuanLyNhaHang\\DAO\\TableDAO.cs",
+              "RelativeToolTip": "QuanLyNhaHang\\DAO\\TableDAO.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwA0AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T07:44:23.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "fTableManager.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\QuanLyNhaHang7\\QuanLyNhaHang7\\QuanLyNhaHang\\fTableManager.cs",
+              "RelativeDocumentMoniker": "QuanLyNhaHang\\fTableManager.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\QuanLyNhaHang7\\QuanLyNhaHang7\\QuanLyNhaHang\\fTableManager.cs",
+              "RelativeToolTip": "QuanLyNhaHang\\fTableManager.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAUwCYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T07:41:14.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "fTableManager.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\QuanLyNhaHang7\\QuanLyNhaHang7\\QuanLyNhaHang\\fTableManager.cs",
+              "RelativeDocumentMoniker": "QuanLyNhaHang\\fTableManager.cs",
+              "ToolTip": "D:\\chiacode\\QuanLyNhaHang7\\QuanLyNhaHang\\fTableManager.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T07:41:09.289Z"
             }
           ]
         }
