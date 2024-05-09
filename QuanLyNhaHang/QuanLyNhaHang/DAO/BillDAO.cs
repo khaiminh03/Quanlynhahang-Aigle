@@ -41,5 +41,20 @@ namespace QuanLyNhaHang.DAO
             }
             return -1;
         }
+        public void InsertBill(int id)
+        {
+            DataProvider.Instance.ExecuteSQL("exec USP_InsertBill @idBan", new object[] { id });
+        }
+        public int GetMaxIDBill()
+        {
+            try
+            {
+                return (int)DataProvider.Instance.ExecuteScalar("SELECT MAX(id) FROM HoaDon");
+            }
+            catch
+            {
+                return 1;
+            }
+        }
     }
 }
