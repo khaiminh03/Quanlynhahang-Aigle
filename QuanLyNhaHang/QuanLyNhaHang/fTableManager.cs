@@ -31,12 +31,25 @@ namespace QuanLyNhaHang
             InitializeComponent();
             this.LoginAccount = acc;
             LoadTable();
+            LoadCategory();
         }
         void load()
         {
            
         }
         #region Method
+        void LoadCategory()
+        {
+            List<Category> listCategory = CategoryDAO.Instance.GetListCaterogy();
+            cbCategory.DataSource = listCategory;
+            cbCategory.DisplayMember = "Name";
+        }
+        void LoadFoodListByCategoryID(int id)
+        {
+            List<Food> listFood = FoodDAO.Instance.GetFoodByCategoryID(id);
+            cbFood.DataSource = listFood;
+            cbFood.DisplayMember = "Name"; // Price hiển thị giá 
+        }
         void ShowBill(int id)
         {
             listBill.Items.Clear();
@@ -51,18 +64,12 @@ namespace QuanLyNhaHang
                 totalPrice += item.TotalPrice;
                 listBill.Items.Add(lsvitem);
             }
+            CultureInfo culture = new CultureInfo("vi-VN");
+            txbTotalPrice.Text = totalPrice.ToString();
         }
         void ChangeAccount(int type)
         {
-           
-        }
-        void LoadCategory()
-        {
-            
-        }
-        void LoadFoodListByCategoryID(int id)
-        {
-           
+
         }
         void LoadTable()
         {
@@ -143,12 +150,40 @@ namespace QuanLyNhaHang
 
         private void cbCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+            int id = 0;
+            ComboBox cb = sender as ComboBox;
+            if (cb.SelectedItem == null)
+                return;
+            Category selected = cb.SelectedItem as Category;
+            id = selected.ID;
+            LoadFoodListByCategoryID(id);
         }
 
         private void btnAddFood_Click(object sender, EventArgs e)
         {
-           
+            Table table = listBill.Tag as Table;
+
+            if (table == null)
+            {
+                MessageBox.Show("Chưa chọn bàn!");
+                return;
+            }
+
+            int idBill = BillDAO.Instance.GetUncheckBillIDByTableID(table.ID);
+            int foodID = (cbFood.SelectedItem as Food).ID;
+            int count = (int)nmFoodCount.Value;
+
+            if (idBill == -1)
+            {
+                BillDAO.instance.InsertBill(table.ID);
+                BillInfoDAO.Instance.InsertBillInfo(BillDAO.Instance.GetMaxIDBill(), foodID, count);
+            }
+            else
+            {
+                BillInfoDAO.Instance.InsertBillInfo(idBill, foodID, count);
+            }
+            ShowBill(table.ID); // load lại khi thêm món
+            LoadTable();
         }
 
         private void btnCheckOut_Click(object sender, EventArgs e)

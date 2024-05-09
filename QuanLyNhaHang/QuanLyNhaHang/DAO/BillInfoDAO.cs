@@ -28,5 +28,9 @@ namespace QuanLyNhaHang.DAO
             }
             return listBillInfo;
         }
+        public void InsertBillInfo(int idHoaDon, int idMonAn, int soLuongMon)
+        {
+            DataProvider.Instance.ExecuteSQL("USP_InsertBillInfo @idHoaDon , @idMonAn , @soLuongMon", new object[] { idHoaDon, idMonAn, soLuongMon });
+        }
     }
 }
